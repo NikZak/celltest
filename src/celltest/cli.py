@@ -14,12 +14,13 @@ Why does this file exist, and why not put this in __main__?
   Also see (1) from http://click.pocoo.org/5/setuptools/#setuptools-integration
 """
 import os
+import sys
 import logging
 import argparse
 from celltest import cells
 
 
-def main():
+def main(argv=sys.argv):
   """Convert notebooks to unitests."""
   parser = argparse.ArgumentParser(description='Convert notebooks to unittests')
   parser.add_argument(
@@ -70,7 +71,11 @@ def main():
   parser.add_argument(
       "-v", "--verbose", help="increase output verbosity", action="store_true")
 
-  args = parser.parse_args()
+  try:
+    args = parser.parse_args(argv[1:])
+  except SystemExit:
+    return 0
+
   for index, file_name in enumerate(args.files):
     if args.output:
       output_file = args.output + "" if len(

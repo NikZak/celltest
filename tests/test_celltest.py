@@ -1,6 +1,7 @@
-
+"""Test main."""
 from celltest.cli import main
 
 
 def test_main():
-    assert main([]) == 0
+  """Test main."""
+  assert main([]) == 0
