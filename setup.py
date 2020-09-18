@@ -24,7 +24,7 @@ def read(*names, **kwargs):
 
 setup(
     name='celltest',
-    version='0.0.1',
+    version='0.0.2',
     license='MIT',
     description='Convert notebook cells to unittests',
     long_description='%s\n%s' %
