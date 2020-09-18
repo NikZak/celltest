@@ -22,7 +22,6 @@ from collections import defaultdict
 from contextlib import redirect_stderr, redirect_stdout
 from unittest import TestCase, main
 
-import matplotlib
 import pandas as pd
 from IPython.core.formatters import DisplayFormatter
 
@@ -376,18 +375,18 @@ class Test(TestCase):
     ct_saved_cell_outputs["stdout"] = None
     ct_saved_cell_outputs["stderr"] = None
     ct_saved_cell_outputs["display_data"] = (
-        "       geography geography_type                     year  \\\n"
-        "count         32             32                       32   \n"
-        "unique        32              3                        1   \n"
-        "top     Woodside           City  2014-01-01T00:00:00.000   \n"
-        "freq           1             15                       32   \n"
-        "mean         NaN            NaN                      NaN   \n"
-        "std          NaN            NaN                      NaN   \n"
-        "min          NaN            NaN                      NaN   \n"
-        "25%          NaN            NaN                      NaN   \n"
-        "50%          NaN            NaN                      NaN   \n"
-        "75%          NaN            NaN                      NaN   \n"
-        "max          NaN            NaN                      NaN   \n"
+        "            geography geography_type                     year  \\\n"
+        "count              32             32                       32   \n"
+        "unique             32              3                        1   \n"
+        "top     Half Moon Bay           City  2014-01-01T00:00:00.000   \n"
+        "freq                1             15                       32   \n"
+        "mean              NaN            NaN                      NaN   \n"
+        "std               NaN            NaN                      NaN   \n"
+        "min               NaN            NaN                      NaN   \n"
+        "25%               NaN            NaN                      NaN   \n"
+        "50%               NaN            NaN                      NaN   \n"
+        "75%               NaN            NaN                      NaN   \n"
+        "max               NaN            NaN                      NaN   \n"
         "\n"
         "        less_than_high_school_graduate  high_school_graduate  \\\n"
         "count                         32.00000             32.000000   \n"
@@ -689,7 +688,7 @@ class Test(TestCase):
     ct_saved_cell_outputs["stderr"] = (
         '<>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?\n'
         '<>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?\n'
-        '<ipython-input-17-7e9601f26686>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?\n'
+        '<ipython-input-38-7e9601f26686>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?\n'
         "  \"\" is ''\n")
     ct_saved_cell_outputs["display_data"] = "True"
 

@@ -51,9 +51,9 @@ Overview
     :alt: Supported implementations
     :target: https://pypi.org/project/celltest
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/NikZak/celltest/v0.0.0.svg
+.. |commits-since| image:: https://img.shields.io/github/commits-since/NikZak/celltest/v0.0.2.svg
     :alt: Commits since latest release
-    :target: https://github.com/NikZak/celltest/compare/v0.0.0...master
+    :target: https://github.com/NikZak/celltest/compare/v0.0.2...master
 
 
 
@@ -124,7 +124,7 @@ Accepted parameters to control test flow::
 
     'comment', 'setup', 'ignore_outputs', 'ignore_stderr', 'ignore_stdout', 'ignore', 'ignore_display_data', 'run_all_till_now'
 
-Parameters can be either specified in in first line (after the % magic) of the notebook cells (e.g.)::
+Parameters can be either specified in first line (after the % magic) of the notebook cells (e.g.)::
 
     # CT: ignore_outputs comment "Test ABC method"
 
