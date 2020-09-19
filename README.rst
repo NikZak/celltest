@@ -59,9 +59,7 @@ Overview
 
 .. end-badges
 
-Convert notebook cells to unittests
-
-* Free software: MIT license
+Use jupyter notebook or jupyter lab in the testing process. This software converts notebook cells to unittests compatible with pytest, coverage, tox.
 
 Installation
 ============

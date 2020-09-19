@@ -62,7 +62,8 @@ setup(
         'Issue Tracker': 'https://github.com/NikZak/celltest/issues',
     },
     keywords=[
-        # eg: 'keyword1', 'keyword2', 'keyword3',
+        'notebook', 'test', 'testing', 'unittest', 'jupyter', 'pytest',
+        'coverage'
     ],
     python_requires='>=3.7',
     install_requires=[
