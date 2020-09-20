@@ -59,7 +59,7 @@ Overview
 
 .. end-badges
 
-Use jupyter notebook or jupyter lab in the testing process. This software converts notebook cells to unittests compatible with pytest, coverage, tox.
+If you want to use jupyter notebook or jupyter lab for testing, celltest converts notebook cells to unittests compatible with pytest, coverage, tox.
 
 Installation
 ============
